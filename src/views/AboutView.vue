@@ -13,7 +13,7 @@ color="#FFE">
 
     <center>
 
-        <v-btn text @click.stop="dialog= true" class color="primary" elevation="2">About Me</v-btn>
+        <v-btn text @click.stop="dialog= true" class color="#BBD" elevation="2">About Me</v-btn>
       
 
 
@@ -35,7 +35,7 @@ color="#FFE">
               </v-card-text>
           </v-card>
       </v-dialog><br/><br/> 
-      <v-btn text @click.stop="dialog2 = true" class color="primary" elevation="2">Basic Math</v-btn>
+      <v-btn text @click.stop="dialog2 = true" class color="#BBD" elevation="2">Basic Math</v-btn>
 
 <v-dialog v-model="dialog2" max-width="600px">
   <v-card>
@@ -48,7 +48,7 @@ color="#FFE">
   </v-card>
 </v-dialog><br/><br/> 
 
-<v-btn text @click.stop="dialog3 = true" class color="primary" elevation="2">String App</v-btn>
+<v-btn text @click.stop="dialog3 = true" class color="#BBD" elevation="2">String App</v-btn>
 
       <v-dialog v-model="dialog3" max-width="600px">
           <v-card>
@@ -61,7 +61,7 @@ color="#FFE">
           </v-card>
       </v-dialog><br/><br/> 
 
-      <v-btn text @click.stop="dialog4 = true" class color="primary" elevation="2">Vuetify</v-btn>
+      <v-btn text @click.stop="dialog4 = true" class color="#BBD" elevation="2">Vuetify</v-btn>
 
       <v-dialog v-model="dialog4" max-width="600px">
           <v-card>
@@ -74,7 +74,7 @@ color="#FFE">
           </v-card>
       </v-dialog><br/><br/> 
 
-      <v-btn text @click.stop="dialog5 = true" class color="primary" elevation="2">Vue Quiz</v-btn>
+      <v-btn text @click.stop="dialog5 = true" class color="#BBD" elevation="2">Vue Quiz</v-btn>
 
       <v-dialog v-model="dialog5" max-width="600px">
           <v-card>
@@ -115,6 +115,6 @@ color="#FFE">
         margin-top: 30px;
         max-width: 10;
         max-height: 10;
-        background-color: aquamarine;
+        background-color: grey;
     }
     </style>
