@@ -1,8 +1,12 @@
 <template>
-    <v-card-title>About Apps</v-card-title>
+    <v-card-title>ABOUT APPS</v-card-title>
+    
     <br/><br/> 
 
-<v-card class="mx-auto">
+<v-card class="mx-auto"
+max-width="500"
+color="#FFE">
+    
     
 
     <div id="pos"></div>
@@ -109,6 +113,8 @@
     <style scoped>
     #pos{
         margin-top: 30px;
-    
+        max-width: 10;
+        max-height: 10;
+        background-color: aquamarine;
     }
     </style>
