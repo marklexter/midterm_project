@@ -1,8 +1,8 @@
 <template>
     <v-card
-    class="ma-15"
+    class="mx-auto"
     max-width="500"
-    color="#FFC">
+    color="#FFE">
     <v-card-title > Question and Answer</v-card-title>
     <v-card-title > True or False</v-card-title>
     <v-card-subtitle>Category: SPORTS</v-card-subtitle>
@@ -52,13 +52,12 @@
     
     #container{
         text-align: center;
-        border: 10px gray;
+        border: 10px #FFE;
         width: 20%;
         height: 10;
         font-weight: lighter;
         font-family: 'Courier New', Courier, monospace;
-        background-color: black;
-        
+       
         
     }
     

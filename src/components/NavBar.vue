@@ -3,8 +3,8 @@
       <v-toolbar app>
        <v-app-bar-nav-icon @click='toggleDrawer'></v-app-bar-nav-icon>
       <v-toolbar-title >
-        <span class="font-weight-light">LABORATORY </span>
-        <span>5</span>
+        <span class="font-weight-light">MIDTERM PROJECT</span>
+        <span></span>
         
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -15,10 +15,10 @@
     >
       <template v-slot:activator="{ props }">
         <v-btn
-          color="primary"
+          color="#009"
           v-bind="props"
         >
-          Dropdown
+          Menu
         </v-btn>
       </template>
 
@@ -33,7 +33,7 @@
       </v-list>
     </v-menu>
 
-      <v-btn flat color="grey">
+      <v-btn flat color="#009">
        
         <v-icon right>exit_to_app</v-icon>
       </v-btn>
@@ -68,7 +68,9 @@
            { title: 'String App', icon: 'mdi-apps', path: '/stringApp'},
            { title: 'About Me', icon: 'mdi-account-circle', path: '/AboutMe'},
            { title: 'Vuetify', icon: 'mdi-menu-open', path: '/Vuetify'},
-           { title: 'Axios', icon: 'quiz', path: '/Axios'},
+           { title: 'Quiz', icon: 'quiz', path: '/Quiz'},
+           { title: 'About', icon: 'quiz', path: '/About'},
+
 
           
            
