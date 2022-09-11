@@ -10,14 +10,15 @@ color="#FFE">
     
 
     <div id="pos"></div>
-
+    
+   
     <center>
         <v-card-title>ABOUT APPS</v-card-title>
         <v-btn text @click.stop="dialog= true" class color="#BBD" elevation="2">About Me</v-btn>
       
 
 
-      <v-dialog v-model="dialog" max-width="600px">
+      <v-dialog v-model="dialog" max-width="500px">
           <v-card>
             
               <v-card-title>
@@ -37,7 +38,7 @@ color="#FFE">
       </v-dialog><br/><br/> 
       <v-btn text @click.stop="dialog2 = true" class color="#BBD" elevation="2">Basic Math</v-btn>
 
-<v-dialog v-model="dialog2" max-width="600px">
+<v-dialog v-model="dialog2" max-width="500px">
   <v-card>
       <v-card-title>
           <h2>Basic Math</h2>
@@ -50,7 +51,7 @@ color="#FFE">
 
 <v-btn text @click.stop="dialog3 = true" class color="#BBD" elevation="2">String App</v-btn>
 
-      <v-dialog v-model="dialog3" max-width="600px">
+      <v-dialog v-model="dialog3" max-width="500px">
           <v-card>
               <v-card-title>
                   <h2>String App</h2>
@@ -63,7 +64,7 @@ color="#FFE">
 
       <v-btn text @click.stop="dialog4 = true" class color="#BBD" elevation="2">Vuetify</v-btn>
 
-      <v-dialog v-model="dialog4" max-width="600px">
+      <v-dialog v-model="dialog4" max-width="500px">
           <v-card>
               <v-card-title>
                   <h2>Vuetify</h2>
@@ -76,13 +77,13 @@ color="#FFE">
 
       <v-btn text @click.stop="dialog5 = true" class color="#BBD" elevation="2">Vue Quiz</v-btn>
 
-      <v-dialog v-model="dialog5" max-width="600px">
+      <v-dialog v-model="dialog5" max-width="500px">
           <v-card>
               <v-card-title>
                   <h2>Vue Quiz</h2>
               </v-card-title>
               <v-card-text>
-                  A simple quiz about Spots
+                  A simple quiz about Sports
               </v-card-text>
               <v-card-subtitle>
                 Category: SPORTS
@@ -116,9 +117,9 @@ color="#FFE">
     <style scoped>
     #pos{
         margin-top: 30px;
-        max-width: 10;
-        max-height: 10;
-        background-color: grey;
+        max-width: 0;
+        max-height: 0;
+        background-color: #798;
         font-family: 'Courier New', Courier, monospace;
        
 

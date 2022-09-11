@@ -69,7 +69,7 @@
            { title: 'About Me', icon: 'mdi-account-circle', path: '/AboutMe'},
            { title: 'Vuetify', icon: 'mdi-menu-open', path: '/Vuetify'},
            { title: 'Quiz', icon: 'quiz', path: '/Quiz'},
-           { title: 'About', icon: 'quiz', path: '/About'},
+           { title: 'About', icon: 'apps-registration', path: '/About'},
 
 
           
