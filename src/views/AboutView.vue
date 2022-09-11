@@ -1,7 +1,9 @@
 <template>
+    <v-card-title>About Apps</v-card-title>
     <br/><br/> 
 
 <v-card class="mx-auto">
+    
 
     <div id="pos"></div>
 
