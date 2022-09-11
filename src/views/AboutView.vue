@@ -82,8 +82,11 @@ color="#FFE">
                   <h2>Vue Quiz</h2>
               </v-card-title>
               <v-card-text>
-                  A simple quiz about Mythology
+                  A simple quiz about Spots
               </v-card-text>
+              <v-card-subtitle>
+                Category: SPORTS
+              </v-card-subtitle>
           </v-card>
       </v-dialog><br/><br/> 
 
