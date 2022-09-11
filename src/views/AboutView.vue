@@ -1,10 +1,10 @@
 <template>
-    <v-card-title>ABOUT APPS</v-card-title>
+   
     
     <br/><br/> 
 
 <v-card class="mx-auto"
-max-width="500"
+max-width="600"
 color="#FFE">
     
     
@@ -12,7 +12,7 @@ color="#FFE">
     <div id="pos"></div>
 
     <center>
-
+        <v-card-title>ABOUT APPS</v-card-title>
         <v-btn text @click.stop="dialog= true" class color="#BBD" elevation="2">About Me</v-btn>
       
 
@@ -119,5 +119,8 @@ color="#FFE">
         max-width: 10;
         max-height: 10;
         background-color: grey;
+        font-family: 'Courier New', Courier, monospace;
+       
+
     }
     </style>
