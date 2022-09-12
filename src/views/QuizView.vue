@@ -1,5 +1,6 @@
 <template>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <v-card
     class="mx-auto"
     max-width="500"
@@ -71,16 +72,24 @@
     color="#FFE">
 
     </v-caard>
+=======
+  <v-card 
+  class="mx-auto"
+  max-width="700"
+  color="#E3F2F3"
+  elevation="12">
+  <img width="700"
+  src="https://cdn.virily.com/wp-content/uploads/2017/12/banner-1.jpg">
+>>>>>>> 99659a7 (demo for git)
     <div class="container">
       <div class="correctAnswers">
-        You have
-        <strong>{{ correctAnswers }} correct {{ pluralizeAnswer }}!</strong>
+        <v-card-tex><strong>Score:{{ correctAnswers }}/{{ questions.length }}</strong></v-card-tex>
       </div>
       <div class="correctAnswers">
-        Currently at question {{ index + 1 }} of {{ questions.length }}
+        <strong>Question {{ index + 1 }} of {{ questions.length }}</strong>
       </div>
-  
-      <h1 v-html="loading ? 'Loading...' : currentQuestion.question"></h1>
+      <v-divider></v-divider>
+      <h4 v-html="loading ? 'Loading...' : currentQuestion.question"></h4>
       <!-- Only first question is displayed -->
       <form v-if="currentQuestion">
         <button
@@ -91,10 +100,12 @@
           @click.prevent="handleClick"
         ></button>
       </form>
+
     </div>
+    </v-card>
   </template>
   
-  <script>
+  <script> 
   export default {
     data() {
       return {
@@ -103,6 +114,11 @@
         index: 0,
       };
     },
+    props: {
+    header: String,
+    subheader: String,
+    score: Object,
+  },
     computed: {
       currentQuestion() {
         if (this.questions !== []) {
@@ -184,7 +200,7 @@
         this.loading = true;
         //fetching questions from api
         let response = await fetch(
-          "https://opentdb.com/api.php?amount=5&category=21&difficulty=easy&type=multiple"
+          "https://opentdb.com/api.php?amount=5&category=15&difficulty=easy&type=multiple"
         );
         let index = 0; //To identify single answer
         let data = await response.json();
@@ -266,9 +282,14 @@
       this.fetchQuestions();
     },
   };
+
+  
   </script>
   
   <style scoped>
+  #container{
+      text-align: center;
+  }
   .container {
     margin: 1rem auto;
     padding: 1rem;
@@ -332,8 +353,8 @@
     color: black;
     background: linear-gradient(
       210deg,
-      rgba(0, 178, 72, 0.25),
-      rgba(0, 178, 72, 0.5)
+      rgba(66, 219, 247, 0.25),
+      rgba(64, 135, 241, 0.5)
     );
   }
   
@@ -355,8 +376,8 @@
     color: black;
     background: linear-gradient(
       210deg,
-      rgba(0, 178, 72, 0.25),
-      rgba(0, 178, 72, 0.5)
+      rgba(66, 219, 247, 0.25),
+      rgba(64, 135, 241, 0.5)
     );
   }
   </style>
