@@ -4,7 +4,7 @@
     <br/><br/> 
 
 <v-card class="mx-auto"
-max-width="600"
+max-width="800"
 color="#FFE">
     
     
@@ -18,10 +18,11 @@ color="#FFE">
       
 
 
-      <v-dialog v-model="dialog" max-width="500px">
+      <v-dialog v-model="dialog" max-width="800px">
           <v-card>
             
               <v-card-title>
+                <img src="/public/1.jpg" width="600" height="400"> 
                   <h2>About Me</h2>
               </v-card-title>
               
@@ -41,6 +42,7 @@ color="#FFE">
 <v-dialog v-model="dialog2" max-width="500px">
   <v-card>
       <v-card-title>
+        <img src="/public/3.jpg" width="600" height="400"> 
           <h2>Basic Math</h2>
       </v-card-title>
       <v-card-text>
@@ -54,6 +56,7 @@ color="#FFE">
       <v-dialog v-model="dialog3" max-width="500px">
           <v-card>
               <v-card-title>
+                <img src="/public/2.jpg" width="600" height="400"> 
                   <h2>String App</h2>
               </v-card-title>
               <v-card-text>
@@ -67,6 +70,7 @@ color="#FFE">
       <v-dialog v-model="dialog4" max-width="500px">
           <v-card>
               <v-card-title>
+                <img src="/public/4.jpg" width="600" height="400"> 
                   <h2>Vuetify</h2>
               </v-card-title>
               <v-card-text>
@@ -80,6 +84,7 @@ color="#FFE">
       <v-dialog v-model="dialog5" max-width="500px">
           <v-card>
               <v-card-title>
+                <img src="/public/5.jpg" width="600" height="400"> 
                   <h2>Vue Quiz</h2>
               </v-card-title>
               <v-card-text>
