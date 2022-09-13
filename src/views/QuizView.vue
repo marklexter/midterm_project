@@ -1,86 +1,10 @@
 <template>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <v-card
-    class="mx-auto"
-    max-width="500"
-    color="#FFE">
-    <v-card-title > Question and Answer</v-card-title>
-    <v-card-title > True or False</v-card-title>
-    <v-card-subtitle>Category: SPORTS</v-card-subtitle>
-    <v-divider></v-divider>
-    <br/>
-
-    <div id="container">
-    <v-btn @click="getQuestions" >ENTER</v-btn>
-    </div>
-    <br>
-    
-    <v-list-item
-            v-for="question in questions"
-            :key="question.id">
-            
-            <v-list-item>{{ question.question }}</v-list-item>
-            <v-list-item>
-                {{question.correct_answer}}
-            
-            </v-list-item>
-    </v-list-item>
-    </v-card>
-    <br/>
-    
-    </template>
-    
-    <script setup>
-        import { ref } from 'vue';
-        import axios from 'axios'
-    
-        const questions=ref([])
-    
-        async function getQuestions () {
-            axios.get('https://opentdb.com/api.php?amount=10&category=21&difficulty=medium').then( response => {
-                questions.value=(response.data.results)
-            })
-            
-        }
-    
-        function resetInput(){
-            questions.value=""
-        }
-    
-    </script>
-    
-    <style scoped>
-    
-    #container{
-        text-align: center;
-        border: 10px #FFE;
-        width: 20%;
-        height: 10;
-        font-weight: lighter;
-        font-family: 'Courier New', Courier, monospace;
-       
-        
-    }
-    
-   
-    </style>
-=======
-
-    <v-caard class="mx-auto"
-    max-width="600"
-    color="#FFE">
-
-    </v-caard>
-=======
   <v-card 
   class="mx-auto"
   max-width="700"
   color="#E3F2F3"
   elevation="12">
-  <img width="700"
-  src="https://cdn.virily.com/wp-content/uploads/2017/12/banner-1.jpg">
->>>>>>> 99659a7 (demo for git)
+ 
     <div class="container">
       <div class="correctAnswers">
         <v-card-tex><strong>Score:{{ correctAnswers }}/{{ questions.length }}</strong></v-card-tex>
@@ -381,4 +305,3 @@
     );
   }
   </style>
->>>>>>> 807dc6b (demo for git)
