@@ -23,7 +23,7 @@ color="#FFE">
             
               <v-card-title>
                 <img src="/public/1.jpg" width="600" height="400"> 
-                  <h2>About Me</h2>
+                 
               </v-card-title>
               
 
@@ -32,7 +32,7 @@ color="#FFE">
               <v-card-text>
 
           
-                  It displays the information about the Developer
+               
            
               </v-card-text>
           </v-card>
@@ -84,7 +84,7 @@ color="#FFE">
       <v-dialog v-model="dialog5" max-width="500px">
           <v-card>
               <v-card-title>
-                <img src="/public/5.jpg" width="600" height="400"> 
+                <img src="/public/11.jpg" width="600" height="400"> 
                   <h2>Vue Quiz</h2>
               </v-card-title>
               <v-card-text>
